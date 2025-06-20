@@ -1,17 +1,19 @@
-import React from "react";
-import Hero from "./Hero";
-import Categories from "./Categories";
-import Header from "../Header/page";
-
+import Cards from "../cards";
+import Data from "../data";
+import Feature from "../features";
+import Footer from "../footer";
+import Navbar from "../navbar";
+import StoreProducts from "./store-products";
 
 const HomeComponent = () => {
-  return (
-    <div className="">
-      {/* <Hero /> */}
-      <Header />
-      <Categories />
-    </div>
-  );
+  return <div>
+    <Navbar/>
+    <Data/>
+    <StoreProducts/>
+    <Cards/>
+    <Feature/>
+    <Footer/>
+  </div>;
 };
 
 export default HomeComponent;
